@@ -1,13 +1,145 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--primary);
+}
+
+:root {
+  --primary: #19202e;
+  --primary-light: #1e2738;
+  --primary-dark: #161d29;
+  --secondary: #fe4d43;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Header - Navbar */
+.header-navbar {
+  background-color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.header-navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-navbar h1 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.header-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header-navbar li {
+  float: left;
+}
+
+.header-navbar li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header-navbar li a:hover:not(.active) {
+  background-color: var(--primary-light);
+}
+
+.active {
+  background-color: var(--secondary);
+}
+
+/* Movie Form */
+
+.form-container {
+  width: 100%;
+  text-align: center;
+}
+
+.form-container h2 {
+  color: white;
+}
+
+.movie-form {
+  background: var(--primary-light);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  display: inline-block;
+  width: 600px;
+}
+
+label {
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 85%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  padding-left: 0%;
+  border: 1px solid red;
+  border-radius: 4px;
+  resize: vertical;
+  vertical-align: middle;
+  float: left;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+.col-2 .checkbox-grid li {
+  display: block;
+  float: left;
+  width: 30%;
+}
+
+.col-2 .checkbox-grid li label {
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+
+.col-1 .genre {
+  margin-top: 5px;
+}
+
+.col-1 {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+}
+
+.col-2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
 }
