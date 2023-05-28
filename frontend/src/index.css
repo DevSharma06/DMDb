@@ -12,6 +12,7 @@ body {
   --primary: #19202e;
   --primary-light: #1e2738;
   --primary-dark: #161d29;
+  --primary-lite: #4f6591;
   --secondary: #fe4d43;
 }
 
@@ -114,6 +115,7 @@ input[type="checkbox"] {
   float: left;
   margin-top: 6px;
   margin-right: 6px;
+  cursor: pointer;
 }
 
 .col-2 .checkbox-grid li {
@@ -126,6 +128,7 @@ input[type="checkbox"] {
   display: block;
   overflow: hidden;
   float: left;
+  cursor: pointer;
 }
 
 .col-1 .genre {
@@ -136,10 +139,23 @@ input[type="checkbox"] {
   float: left;
   width: 25%;
   margin-top: 20px;
+  text-align: start;
 }
 
 .col-2 {
   float: left;
   width: 75%;
   margin-top: 6px;
+}
+
+button {
+  background-color: var(--secondary);
+  color: white;
+  border: 0;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 18px;
+  width: 120px;
+  font-weight: bold;
+  cursor: pointer;
 }

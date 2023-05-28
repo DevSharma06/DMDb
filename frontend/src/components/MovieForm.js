@@ -117,6 +117,8 @@ const MovieForm = () => {
               />
             </div>
           </div>
+
+          <button>Add Movie</button>
         </form>
       </div>
     </div>
