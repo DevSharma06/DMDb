@@ -159,3 +159,76 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
+/* Movie Item Display */
+.movie-item {
+  display: flex;
+  color: white;
+  background: var(--primary-light);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.movie-item .movie-desc {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-item ul {
+  padding: 0;
+  display: inline;
+  font-weight: bold;
+}
+
+.movie-item li {
+  display: inline;
+  list-style-type: none;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: var(--primary);
+}
+
+.movie-item .movie-poster {
+  flex: 1;
+  margin: 0px;
+}
+
+.movie-item h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.movie-item img {
+  width: 230px;
+  height: 320px;
+  float: right;
+}
+
+.movie-item .button-container {
+  text-align: center;
+}
+
+.movie-item .edit-button,
+.movie-item .delete-button {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  background-color: var(--primary-lite);
+  color: white;
+  border: 0;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 18px;
+  width: 120px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.movie-item .delete-button {
+  margin: 0;
+}
