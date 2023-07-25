@@ -1,4 +1,4 @@
-package com.dev.dmdb.DMDb.model;
+package com.dev.dmdb.DMDb.models;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 

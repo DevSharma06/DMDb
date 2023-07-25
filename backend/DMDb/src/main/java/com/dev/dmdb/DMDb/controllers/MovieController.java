@@ -1,4 +1,4 @@
-package com.dev.dmdb.DMDb;
+package com.dev.dmdb.DMDb.controllers;
 
 import java.util.List;
 
@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dev.dmdb.DMDb.model.Movie;
+import com.dev.dmdb.DMDb.SequenceGeneratorService;
+import com.dev.dmdb.DMDb.models.Movie;
 import com.dev.dmdb.DMDb.repository.MovieRepository;
 
 @RestController

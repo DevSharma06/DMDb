@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.dev.dmdb.DMDb.model.Movie;
+import com.dev.dmdb.DMDb.models.Movie;
 
 @Repository
 public interface MovieRepository extends MongoRepository<Movie, String>{

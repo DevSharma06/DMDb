@@ -1,3 +1,9 @@
+html, body, #root, .App {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--primary);
+  min-height: 100vh;
 }
 
 :root {
@@ -14,6 +21,8 @@ body {
   --primary-dark: #161d29;
   --primary-lite: #4f6591;
   --secondary: #fe4d43;
+  --foreground: #273248;
+  --text-color: #a5b3ce;
 }
 
 code {
@@ -30,12 +39,22 @@ code {
   padding-left: 10px;
 }
 
+.header-title {
+  flex: 1;
+  text-align: left;
+}
+
+.header-menu {
+  text-align: right;
+}
+
 .header-navbar a {
   color: white;
   text-decoration: none;
 }
 
 .header-navbar h1 {
+  color: var(--secondary);
   margin: 0;
   margin-right: 10px;
 }
@@ -104,6 +123,12 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  color: var(--text-color);
+  background-color: var(--foreground);
+}
+
+::placeholder {
+  color: var(--text-color);
 }
 
 input[type="checkbox"] {
@@ -231,4 +256,70 @@ button {
 
 .movie-item .delete-button {
   margin: 0;
+}
+
+/* Login and Signup */
+.login-container {
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.login {
+  background: var(--primary-light);
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+  display: inline-block;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login h3 {
+  margin: 0;
+}
+
+.login input {
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  color: var(--text-color);
+  background-color: var(--foreground);
+}
+
+.email-input {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.email-input label {
+  flex: 1;
+}
+
+.email-input input {
+  flex: 2;
+}
+
+.password-input {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.password-input label {
+  flex: 1;
+}
+
+.password-input input {
+  flex: 2;
 }

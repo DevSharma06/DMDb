@@ -7,7 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.dev.dmdb.DMDb.model.Movie;
+import com.dev.dmdb.DMDb.models.Movie;
 import com.dev.dmdb.DMDb.repository.MovieRepository;
 
 @Configuration

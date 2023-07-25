@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
-import com.dev.dmdb.DMDb.model.DatabaseSequence;
+import com.dev.dmdb.DMDb.models.DatabaseSequence;
 
 @Service
 public class SequenceGeneratorService {
